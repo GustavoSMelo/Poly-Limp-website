@@ -1,0 +1,173 @@
+@charset "utf8";
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+}
+
+.layout{
+    display: grid;
+    grid-template: "icon icon icon icon navbar navbar navbar navbar"
+    "Apresentacao Apresentacao Apresentacao Apresentacao BoxAp BoxAp BoxAp BoxAp"
+    "Box-info Box-info Box-info Box-info Box-info Box-info Box-info Box-info"
+    ;
+}
+.icon{
+    grid-area: icon;
+    padding: 15px;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.icon i a{
+    text-decoration: none;
+    color: #3963d4;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #fbfbfb; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+    font-size: 1em;
+}
+
+.navbar > ul > li{
+    display: inline;
+    margin: 15px;
+}
+
+.navbar > ul > li > a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+.btn-navbar{
+    background: linear-gradient(to left, #3963d4, #722ba1);
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+.navbar > ul > li > a:hover{
+    color: #3963d4;
+    transition: 1s;
+}
+
+.Apresentacao{
+    grid-area: Apresentacao;
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 6%;
+    margin-right: 0%;
+}
+.Apresentacao p{
+    text-align: justify;
+}
+
+.Apresentacao h1{
+    color: #722ba1;
+
+}
+
+.BoxAp{
+    grid-area: BoxAp;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    box-shadow: 1px 1px 10px;
+    margin-right: 20%;
+    margin-left: 5%;
+    text-align: center;
+    background: linear-gradient(to left, #3963d4, #722ba1);
+    border-radius: 5px;
+}
+
+.BoxAp > .emojiCaminhao{
+    font-size: 40pt;
+    color: #3963d4;
+    text-align: center;
+}
+
+.BoxAp p{
+    color: #fff;
+    padding: 10px;
+    text-align: justifys;
+}
+
+.BoxAp button{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.Box-info{
+    grid-area: Box-info;
+    margin: 7vh;
+    margin-right: 36vh;
+    margin-left: 36vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px;
+    text-align: center;
+}
+
+.Box-info p{
+    text-align: center;
+    padding: 5vh;
+}
+
+.Box-info h1{
+    text-align: center;
+    margin: 2vh;
+}
+
+@media screen and (max-width: 970px){
+    .Box-info{
+        grid-area: Box-info;
+        margin: 6vh;
+        margin-right: 20%;
+        margin-left: 20%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px;
+    }
+
+    .navbar > ul > li > a > span{
+        display: none;
+    }
+
+    .navbar > ul > li > a {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .layout{
+        grid-template: "icon icon navbar navbar"
+        "Apresentacao Apresentacao Apresentacao Apresentacao"
+        "BoxAp BoxAp BoxAp BoxAp"
+        "Box-info Box-info Box-info Box-info"
+    }
+
+    .Apresentacao{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .BoxAp{
+        margin-left: 15%;
+    }
+
+    .navbar > ul > li > button{
+        display: none;
+    }
+}
