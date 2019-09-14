@@ -1,0 +1,95 @@
+@charset "utf8";
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+}
+
+.layout{
+    display: grid;
+    grid-template: "icon icon icon icon navbar navbar navbar navbar"
+    "txtAboutUs txtAboutUs txtAboutUs txtAboutUs txtAboutUs txtAboutUs txtAboutUs txtAboutUs"
+    "footer footer footer footer footer footer footer footer "
+}
+
+.icon{
+    grid-area: icon;
+    padding: 15px;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.icon i a{
+    text-decoration: none;
+    color: #3963d4;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #fbfbfb; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+    font-size: 1em;
+}
+
+.navbar > ul > li{
+    display: inline;
+    margin: 15px;
+}
+
+.navbar > ul > li > a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+.txtAboutUs{
+    grid-area: txtAboutUs;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+    color: #404040;
+}
+
+.txtAboutUs h1{
+    text-align: center;
+    margin: 7%;
+}
+
+.btn-navbar{
+    background: linear-gradient(to left, #3963d4, #722ba1);
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+.stars img{
+    text-align: center;
+    width: 10%;
+}
+
+.navbar > ul > li > a:hover{
+    color: #3963d4;
+    transition: 1s;
+}
+
+.ratingGoogle img{
+    width: 100%;
+    height: 30%;
+}
+
+footer{
+    background-color: #ececec;
+    grid-area: footer;
+    border-top: 1px solid #b9b9b9;
+    text-align: center;
+    padding: 2%;
+    margin-top: 3%;
+}
