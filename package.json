@@ -6,9 +6,12 @@
   "dependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0"
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
   },
-  "scripts":{
-    "dev": "babel ./script.js -o ./bundle.js -w"
+  "scripts": {
+    "dev": "webpack ./script.js -o ./bundle.js"
   }
 }
