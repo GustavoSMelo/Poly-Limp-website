@@ -13,6 +13,7 @@
     grid-template: "icon icon icon icon navbar navbar navbar navbar"
     "Apresentacao Apresentacao Apresentacao Apresentacao BoxAp BoxAp BoxAp BoxAp"
     "Box-info Box-info Box-info Box-info Box-info Box-info Box-info Box-info"
+    "confianca-user confianca-user confianca-user economia economia economia mundo-ecologico mundo-ecologico"
     ;
 }
 .icon{
@@ -131,6 +132,67 @@
     margin: 2vh;
 }
 
+.confianca-user{
+    grid-area: confianca-user;
+    margin-left: 15%;
+    text-align: justify;
+    background-color: #0254c0;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000;
+    transition: 2s;
+}
+.confianca-user h1 {
+    text-align: center;
+}
+
+.confianca-user:hover{
+    background-color: #00439b;
+    transition: 2s;
+}
+
+.economia{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-area: economia;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: #bea363;
+    padding: 15px;
+    box-shadow: 2px 2px 5px #000;
+    transition: 2s;
+}
+
+.economia h1{
+    text-align: center;
+}
+
+.mundo-ecologico{
+    grid-area: mundo-ecologico;
+    margin-right: 15%;
+    text-align:justify;
+    background-color: #9df6a5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000;
+    transition: 2s;
+}
+
+.mundo-ecologico h1{
+    text-align: center;
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 30%;
+    bottom: 30%;
+    background-color: #ff36a1;
+}
+
 @media screen and (max-width: 970px){
     .Box-info{
         grid-area: Box-info;
@@ -150,12 +212,15 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 780px){
     .layout{
         grid-template: "icon icon navbar navbar"
         "Apresentacao Apresentacao Apresentacao Apresentacao"
         "BoxAp BoxAp BoxAp BoxAp"
         "Box-info Box-info Box-info Box-info"
+        "confianca-user confianca-user confianca-user confianca-user"
+        "economia economia economia economia"
+        "mundo-ecologico mundo-ecologico mundo-ecologico mundo-ecologico"
     }
 
     .Apresentacao{
@@ -169,5 +234,12 @@
 
     .navbar > ul > li > button{
         display: none;
+    }
+
+    .mundo-ecologico, .economia, .confianca-user{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%; 
+        margin-bottom: 3.5%; 
     }
 }
