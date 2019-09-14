@@ -1,5 +1,4 @@
 @charset "utf8";
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
 
 *{
@@ -13,8 +12,14 @@
     grid-template: "icon icon icon icon navbar navbar navbar navbar"
     "Apresentacao Apresentacao Apresentacao Apresentacao BoxAp BoxAp BoxAp BoxAp"
     "Box-info Box-info Box-info Box-info Box-info Box-info Box-info Box-info"
+    "Objetivos Objetivos Objetivos Objetivos Objetivos Objetivos Objetivos Objetivos"
     "confianca-user confianca-user confianca-user economia economia economia mundo-ecologico mundo-ecologico"
-    ;
+    "galeria-intro galeria-intro galeria-intro galeria-intro galeria-intro galeria-intro galeria-intro galeria-intro"
+    "figura1 figura1 figura1 figura2 figura2 figura2 figura3 figura3"
+    "figura4 figura4 figura4 figura5 figura5 figura5 figura6 figura6 "
+    "figura7 figura7 figura7 figura8 figura8 figura8 figura9 figura9"
+    "redes-sociais redes-sociais redes-sociais redes-sociais redes-sociais redes-sociais redes-sociais redes-sociais"
+    "footer footer footer footer footer footer footer footer";
 }
 .icon{
     grid-area: icon;
@@ -90,6 +95,7 @@
     text-align: center;
     background: linear-gradient(to left, #3963d4, #722ba1);
     border-radius: 5px;
+    transition: 5s;
 }
 
 .BoxAp > .emojiCaminhao{
@@ -120,6 +126,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 5px;
     text-align: center;
+    transition: 5s;
 }
 
 .Box-info p{
@@ -132,6 +139,12 @@
     margin: 2vh;
 }
 
+.objetivos{
+    grid-area: Objetivos;
+    margin: 3.5%;
+    text-align: center;
+}
+
 .confianca-user{
     grid-area: confianca-user;
     margin-left: 15%;
@@ -141,7 +154,7 @@
     color: #fff;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #000;
-    transition: 2s;
+    transition: 5s;
 }
 .confianca-user h1 {
     text-align: center;
@@ -161,7 +174,7 @@
     background-color: #bea363;
     padding: 15px;
     box-shadow: 2px 2px 5px #000;
-    transition: 2s;
+    transition: 5s;
 }
 
 .economia h1{
@@ -176,7 +189,7 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #000;
-    transition: 2s;
+    transition: 5s;
 }
 
 .mundo-ecologico h1{
@@ -185,14 +198,166 @@
 
 .modal{
     display: none;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    right: 30%;
-    bottom: 30%;
-    background-color: #ff36a1;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000042;
+    overflow: auto;
 }
 
+.modal-content{
+    background-color: #fff;
+    width: 50%;
+    height: 75%;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #000;
+    margin: auto;
+}
+
+.btnGmail{
+    width: 30%;
+    background-color: #fff;
+    color: #ff2323;
+    font-size: 12;
+    height: 10%;
+    border-radius: 10px;
+    margin: 5%;
+    border: none;
+    box-shadow: 2px 2px 5.5px #ff7b7b;
+}
+
+.btnWhatsapp{
+    width: 30%;
+    background-color: #64ff79;
+    color: #fff;
+    height: 10%;
+    border-radius: 10px;
+    margin: 5%;
+    border: none;
+    font-size: 12pt;
+}
+
+.btnFacebook{
+    width: 30%;
+    background-color: #00439b;
+    height: 10%;
+    margin: 5%;
+    font-size: 12pt;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.exitModal{
+    background-color: #fff;
+    border: none;
+    margin: 5%;
+    font-size: 30pt;
+    color: #000;
+
+}
+
+.galeria-intro{
+    grid-area: galeria-intro;
+    text-align: center;
+    margin: 5%;
+    
+}
+
+.figura1{
+    grid-area: figura1;
+    margin: 5% auto;
+    height: 300px;
+    width: 75%;
+}
+
+.figura2{
+    grid-area: figura2;
+    margin: 5% auto;
+    height: 300px;
+    width: 75%;
+}
+
+.figura3{
+    grid-area: figura3;
+    margin: 5% auto;
+    height: 302.5px;
+    width: 75%;
+}
+
+.figura4{
+    grid-area: figura4;
+    margin: 5% auto;
+    height: 300px;
+    width: 75%;
+}
+
+.figura5{
+    grid-area: figura5;
+    margin: 5% auto;
+    height: 300px;
+    width: 75%;
+}
+
+.figura6{
+    grid-area: figura6;
+    margin: 5% auto;
+    height: 302.5px;
+    width: 75%;
+}
+
+.figura7{
+    grid-area: figura7;
+    margin: 5% auto;
+    height: 300px;
+    width: 75%;
+}
+
+.figura8{
+    grid-area: figura8;
+    margin: 5% auto;
+    height: 300px;
+    width: 75%;
+}
+
+.figura9{
+    grid-area: figura9;
+    margin: 5% auto;
+    height: 302.5px;
+    width: 75%;
+}
+
+.figura1 img, .figura2 img, .figura3 img,.figura4 img, .figura5 img, .figura6 img, .figura7 img, .figura8 img, .figura9 img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #303030;
+}
+
+.redes-sociais{
+    background: linear-gradient(to right, #722ba1, #00439b);
+    grid-area: redes-sociais;
+    width: 94%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    height: 35vh;
+}
+
+.rodape{
+    background-color: #ececec;
+    grid-area: footer;
+    border-top: 1px solid #b9b9b9;
+    text-align: center;
+    padding: 2%;
+}
+    
 @media screen and (max-width: 970px){
     .Box-info{
         grid-area: Box-info;
@@ -218,9 +383,22 @@
         "Apresentacao Apresentacao Apresentacao Apresentacao"
         "BoxAp BoxAp BoxAp BoxAp"
         "Box-info Box-info Box-info Box-info"
+        "Objetivos Objetivos Objetivos Objetivos"
         "confianca-user confianca-user confianca-user confianca-user"
         "economia economia economia economia"
         "mundo-ecologico mundo-ecologico mundo-ecologico mundo-ecologico"
+        "galeria-intro galeria-intro galeria-intro galeria-intro"
+        "figura1 figura1 figura1 figura1"
+        "figura2 figura2 figura2 figura2"
+        "figura3 figura3 figura3 figura3"
+        "figura4 figura4 figura4 figura4"
+        "figura5 figura5 figura5 figura5"
+        "figura6 figura6 figura6 figura6"
+        "figura7 figura7 figura7 figura7"
+        "figura8 figura8 figura8 figura8"
+        "figura9 figura9 figura9 figura9"
+        "redes-sociais redes-sociais redes-sociais redes-sociais"
+        "footer footer footer footer"
     }
 
     .Apresentacao{
