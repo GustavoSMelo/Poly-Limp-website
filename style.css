@@ -120,7 +120,7 @@
 
 .Box-info{
     grid-area: Box-info;
-    margin: 7vh;
+    margin: 7%;
     margin-right: 36vh;
     margin-left: 36vh;
     border-radius: 10px;
@@ -171,7 +171,7 @@
     grid-area: economia;
     text-align: justify;
     border-radius: 10px;
-    background-color: #bea363;
+    background-color: #c37b1d;
     padding: 15px;
     box-shadow: 2px 2px 5px #000;
     transition: 5s;
@@ -249,6 +249,40 @@
     border: none;
     border-radius: 10px;
     color: #fff;
+}
+
+.btnFacebookBox{
+    width: 15%;
+    background-color: #00439b;
+    height: 10%;
+    margin: 2%;
+    font-size: 12pt;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.btnWhatsappBox{
+    width: 15%;
+    background-color: #64ff79;
+    color: #fff;
+    height: 10%;
+    border-radius: 10px;
+    margin: 2%;
+    border: none;
+    font-size: 12pt;
+}
+
+.btnGmailBox{
+    width: 15%;
+    background-color: #fff;
+    color: #ff2323;
+    font-size: 12;
+    height: 10%;
+    border-radius: 10px;
+    margin: 2%;
+    border: none;
+    box-shadow: 2px 2px 5.5px #ff7b7b;
 }
 
 .exitModal{
@@ -419,5 +453,9 @@
         margin-right: 15%;
         margin-top: 5%; 
         margin-bottom: 3.5%; 
+    }
+
+    .Box-info{
+        margin: 4%;
     }
 }
