@@ -19,16 +19,7 @@ const components = {
     btnModal2: window.document.querySelector('.btn-modal2'),
     btnModal3: window.document.querySelector('.btn-modal3'),
     modal: window.document.querySelector('.modal'),
-    btnExitModal: window.document.querySelector('.exitModal'),
-    img01: window.document.querySelector('#img01'),
-    img02: window.document.querySelector('#img02'),
-    img03: window.document.querySelector('#img03'),
-    img04: window.document.querySelector('#img04'),
-    img05: window.document.querySelector('#img05'),
-    img06: window.document.querySelector('#img06'),
-    img07: window.document.querySelector('#img07'),
-    img08: window.document.querySelector('#img08'),
-    img09: window.document.querySelector('#img09'),
+    btnExitModal: window.document.querySelector('.exitModal')
 };
 
 components.btnModal.addEventListener('click', () =>{
@@ -65,5 +56,3 @@ components.btnExitModal.addEventListener('click', ()=>{
     antiscroll.style.overflow = 'auto';
     antiscroll.style.height = 'auto';
 });
-
-
